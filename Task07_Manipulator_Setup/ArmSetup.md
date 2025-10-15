@@ -139,6 +139,10 @@ The robot arm uses standard DH parameters for kinematic modeling:
    </p>
 
 2. **Get IP Address:**  
+   To view the network config, in terminal use:
+   ```bash
+   ifconfig
+   ```
    Check `wlan0` (Wi-Fi) or `eth0` (Ethernet) for the IP address (e.g., 192.168.1.193).  
    <p align="center">
      <img src="../Images/Manipulator/Image8.png" alt="IP Address" width="500"/>
@@ -147,7 +151,7 @@ The robot arm uses standard DH parameters for kinematic modeling:
 3. **SSH Access:**  
    SSH from your Intel NUC to the arm:  
    ```bash
-   ssh er@IP_ADDRESS_OF_ARM
+   ssh -Y er@IP_ADDRESS_OF_ARM
    ```
    Password: `Elephant` (case sensitive)  
    <p align="center">
